@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Alura</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> 
+        
+    </head>
+
+    <body>
+
+        <main>
+            <div class="cajaizq">
+                <img src="logo.png">
+                <div class="auxiliar">
+                    <form>
+                        <textarea onclick="limpiarcajas()" onmousedown="limpiarcajas()" class="textin" id="textoin" placeholder="Escriba su texto aquí" ></textarea>
+
+                        <input type="button" onclick="captura()" value="Encriptar" class="botone" >
+
+                        <input type="button" onclick="BotonDesencriptar()" value="Desencriptar" class="botond">
+                        <div class="alert">
+                            <img class="iconoAlert"  src="alert.png"><p class="leyendaAlert">No reconoce mayúsculas ni acentos</p>
+                        </div>
+                        
+
+                    </form>
+                </div>
+            </div>
+            <div class="cajader" id="cajader">
+                <textarea class="textout" id="textout"></textarea>
+                <img id="muñeco" class="muñeco" src="Muñeco.png">
+                <p class="sintexto" id="sintexto"> Aún no hay nada por aquí :( </p>      
+                <input class="botoncopy" id="botoncopy" type="button"  name="copiar" value="Copiar" onclick="BotonCopiar()">
+            </div>
+        </main>   
+
+        <footer>
+            <p class="firma">Challenge de Principiante en Programación: Proyecto Encriptador - by Daniel Olave</p>
+        </footer>
+
+        <script type="text/javascript" src="script.js"></script>     
+    </body>
+
+</html>
